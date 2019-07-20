@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PORTFOLIO</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="960.css">
+<link rel="stylesheet"  href="reset.css">
+<link rel="stylesheet"  href="text.css">
+<link rel="stylesheet"  href="homestyle.css">
+</head>
+
+<body>
+<div class="container_12">
+<br><h1> PORTFOLIO </h1>
+<p> This is a collection of all my past projects, for academic and leisure purposes. </p>
+
+
+<button class="accordion">Photography</button>
+<div class="panel">
+  <iframe src="https://rtdival.wixsite.com/worldsinpages/young-adult" height="500" width="900"></iframe>
+<iframe src="https://rtdival.wixsite.com/worldsinpages/adventure" height="500" width="900"></iframe>
+</div>
+
+<button class="accordion">Literature</button>
+<div class="panel">
+  <iframe width="500" height="280" frameborder="0" allowfullscreen="" src="https://embed.wattpad.com/story/194366310" ></iframe>
+</div>
+
+<button class="accordion">Animation</button>
+<div class="panel">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YTMqy-w5jYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<button class="accordion">Audio</button>
+<div class="panel">
+  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/473978106&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</div>
+
+<button class="accordion">Graphic Design</button>
+<div class="panel">
+<img src="pyramid.png" alt="Pyramid blocks" width="300" height="300"> 
+<img src="teardrop.png" alt="Teardrop blocks" width="100" height="400"> 
+</div>
+<br> <br>
+<div class="grid_5">
+<a href="resume.html" class="button"> RESUME </a> </div>
+<div class="grid_2"> <br> </div>
+<div class="grid_5">
+<a href="homepage.html" class="button"> HOME </a> 
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
